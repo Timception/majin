@@ -1,4 +1,4 @@
-# Majin
+# Majin Keyboard
 
 ![Majin_PCB_Front](https://user-images.githubusercontent.com/84595044/205833090-124ce578-96cc-4218-931a-383e41389654.png)
 
