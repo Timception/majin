@@ -1,6 +1,7 @@
 # Majin
 
-![Majin](https://instagram.com/keykraft)
+![Majin_PCB_Front](https://user-images.githubusercontent.com/84595044/205833090-124ce578-96cc-4218-931a-383e41389654.png)
+
 
 * An expanded 65% keyboard with 2 rotary encoders, an OLED and basic RGB lighting.
 
