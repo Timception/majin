@@ -15,13 +15,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 /* ws2812 RGB LED */
-#	define RGB_DI_PIN				B8
-#	define RGBLED_NUM				74 // Number of LEDs
-#	define DRIVER_LED_TOTAL			RGBLED_NUM
-#	define RGB_MATRIX_STARTUP_MODE	RGB_MATRIX_BAND_VAL
+#	define RGB_DI_PIN						B8
+#	define RGB_MATRIX_MAXIMUM_BRIGHTNESS	95 // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
+#	define LED_MATRIX_DEFAULT_VAL 			51
+//#	define WS2812_TRST_US 					199	//Default is 280 - LED Refresh Rate - Must be more than 80
+#	define RGBLED_NUM						74 // Number of LEDs
+#	define DRIVER_LED_TOTAL					RGBLED_NUM
+#	define RGB_MATRIX_STARTUP_MODE			RGB_MATRIX_CYCLE_SPIRAL
+#	define LED_DISABLE_WHEN_USB_SUSPENDED	// turn off effects when suspended
+#	define LED_MATRIX_LED_PROCESS_LIMIT		(LED_MATRIX_LED_COUNT + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
 
 #ifdef RGB_MATRIX_ENABLE
-#   define ENABLE_RGB_MATRIX_ALPHAS_MODS
+//#   define ENABLE_RGB_MATRIX_ALPHAS_MODS
 #   define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 #   define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
 #   define ENABLE_RGB_MATRIX_BREATHING
@@ -31,10 +36,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   define ENABLE_RGB_MATRIX_BAND_PINWHEEL_VAL
 #   define ENABLE_RGB_MATRIX_BAND_SPIRAL_SAT
 #   define ENABLE_RGB_MATRIX_BAND_SPIRAL_VAL
-#   define ENABLE_RGB_MATRIX_CYCLE_ALL
+//#   define ENABLE_RGB_MATRIX_CYCLE_ALL
 #   define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
 #   define ENABLE_RGB_MATRIX_CYCLE_UP_DOWN
-#   define ENABLE_RGB_MATRIX_CYCLE_OUT_IN
+//#   define ENABLE_RGB_MATRIX_CYCLE_OUT_IN
 #   define ENABLE_RGB_MATRIX_CYCLE_OUT_IN_DUAL
 #   define ENABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
 #   define ENABLE_RGB_MATRIX_CYCLE_PINWHEEL
@@ -52,16 +57,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   define ENABLE_RGB_MATRIX_PIXEL_RAIN
 
 //	RGB_MATRIX_FRAMEBUFFER_EFFECTS
-#   define ENABLE_RGB_MATRIX_TYPING_HEATMAP
-#   define ENABLE_RGB_MATRIX_DIGITAL_RAIN
+//#   define ENABLE_RGB_MATRIX_TYPING_HEATMAP
+//#   define ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
 //	RGB_MATRIX_KEYPRESSES
 #   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
-#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE
-#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
-#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
-#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS
-#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTICROSS
+//#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE
+//#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
+//#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
+//#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS
+//#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTICROSS
 #   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS
 #   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTINEXUS
 #   define ENABLE_RGB_MATRIX_SPLASH
