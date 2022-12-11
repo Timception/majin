@@ -98,7 +98,10 @@ bool oled_task_user(void) {
 }
 #endif
 
+//Fixes green light error after toggle rgb off and replug
+/*
 void keyboard_post_init_user(void) {
   rgblight_enable_noeeprom();
   rgblight_sethsv_noeeprom(100, 255, 255); // can also use: rgblight_sethsv_noeeprom(HSV_TEAL);
 }
+*/
