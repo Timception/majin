@@ -1,6 +1,10 @@
 # Majin Keyboard
 
-![Majin_PCB_Front](https://user-images.githubusercontent.com/84595044/205833090-124ce578-96cc-4218-931a-383e41389654.png)
+![Majin_PCB_Front](https://user-images.githubusercontent.com/84595044/206883964-9dbc2319-2516-4258-963a-cfbf29df66ff.png)
+
+![Majin_PCB_Back](https://user-images.githubusercontent.com/84595044/206883980-2298e7f4-760b-49c5-819d-b50a430c9f45.png)
+
+![Screenshot 2022-12-11 093518](https://user-images.githubusercontent.com/84595044/206883992-e339d137-b798-41f3-8ddc-319556db1cfb.png)
 
 
 * An expanded 65% Vial Enabled keyboard with 2 rotary encoders, an OLED and RGB Matrix lighting on every key.
