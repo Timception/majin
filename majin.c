@@ -1,4 +1,4 @@
-/* Copyright 2022 Timception
+/* Copyright 2023 Timception
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -63,4 +63,10 @@ void suspend_wakeup_init_kb(void) {
     rgb_matrix_set_suspend_state(false);
     suspend_wakeup_init_user();
 }
+
+
+
+
+
+
 #endif

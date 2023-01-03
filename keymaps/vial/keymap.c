@@ -1,4 +1,4 @@
-/* Copyright 2022 Timception
+/* Copyright 2023 Timception
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,6 +16,7 @@
 #include QMK_KEYBOARD_H
 #include "raw_hid.h"
 #include "quantum.h"
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
@@ -63,45 +64,3 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [3] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS), ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
 };
 #endif
-
-
-#ifdef OLED_ENABLE
-bool oled_task_user(void) {
-    // Host Keyboard Layer Status
-    oled_write_P(PSTR("Layer: "), false);
-
-    switch (get_highest_layer(layer_state)) {
-        case 0:
-            oled_write_P(PSTR("One\n"), false);
-            break;
-        case 1:
-            oled_write_P(PSTR("Two\n"), false);
-            break;
-        case 2:
-            oled_write_P(PSTR("Three\n"), false);
-            break;
-		case 3:
-            oled_write_P(PSTR("Four\n"), false);
-            break;
-        default:
-            // Or use the write_ln shortcut over adding '\n' to the end of your string
-            oled_write_ln_P(PSTR("Undefined"), false);
-    }
-
-    // Host Keyboard LED Status
-    led_t led_state = host_keyboard_led_state();
-    oled_write_P(led_state.num_lock ? PSTR("NUM ") : PSTR("    "), false);
-    oled_write_P(led_state.caps_lock ? PSTR("CAP ") : PSTR("    "), false);
-    oled_write_P(led_state.scroll_lock ? PSTR("SCR ") : PSTR("    "), false);
-    
-    return false;
-}
-#endif
-
-//Fixes green light error after toggle rgb off and replug
-/*
-void keyboard_post_init_user(void) {
-  rgblight_enable_noeeprom();
-  rgblight_sethsv_noeeprom(100, 255, 255); // can also use: rgblight_sethsv_noeeprom(HSV_TEAL);
-}
-*/

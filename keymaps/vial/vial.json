@@ -2,7 +2,7 @@
     "name": "Majin Keyboard",
     "vendorId": "0x5965",
     "productId": "0x2369",
-    "lighting": "none",
+	"lighting": "qmk_rgblight",
     "matrix": {
         "rows": 5,
         "cols": 16

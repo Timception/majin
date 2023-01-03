@@ -1,1 +1,1 @@
-# The default keymap for Xtra65
+# The default keymap for Majin

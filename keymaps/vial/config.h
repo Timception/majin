@@ -27,6 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #ifdef RGB_MATRIX_ENABLE
 //#   define ENABLE_RGB_MATRIX_ALPHAS_MODS
+#   define ENABLE_RGB_MATRIX_NONE
 #   define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 #   define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
 #   define ENABLE_RGB_MATRIX_BREATHING

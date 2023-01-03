@@ -1,5 +1,5 @@
 /*
-Copyright 2022 Timception
+Copyright 2023 Timception
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -59,6 +59,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define I2C1_SCL_PIN B6
 #define I2C1_SDA_PIN B7
 #define OLED_BRIGHTNESS 128
+
+/* OLED Stuff: Bongo, Luna etc. */
+#define OLED_FONT_H "oled/oledfont.c"
+#define CMK 1
+#define NUM 2
+#define SYM 3
+#define FNC 4
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
