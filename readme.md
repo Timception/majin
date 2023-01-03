@@ -1,13 +1,13 @@
 # Majin Keyboard
 
-![Majin_PCB_Front](https://user-images.githubusercontent.com/84595044/206883964-9dbc2319-2516-4258-963a-cfbf29df66ff.png)
+![Screenshot 2023-01-04 000935](https://user-images.githubusercontent.com/84595044/210423753-3c323def-0724-4cab-a98e-264975c6fefa.png)
 
-![Majin_PCB_Back](https://user-images.githubusercontent.com/84595044/206883980-2298e7f4-760b-49c5-819d-b50a430c9f45.png)
+![Screenshot 2023-01-04 001729](https://user-images.githubusercontent.com/84595044/210423825-fcbb1763-852e-4ce4-ace9-cb2db45d9269.png)
 
-![Screenshot 2022-12-11 093518](https://user-images.githubusercontent.com/84595044/206883992-e339d137-b798-41f3-8ddc-319556db1cfb.png)
+![Screenshot 2023-01-04 001859](https://user-images.githubusercontent.com/84595044/210423883-aad03419-5c27-48b0-a09d-9af33da24100.png)
 
 
-* An expanded 65% Vial Enabled keyboard with 2 rotary encoders, an OLED and RGB Matrix lighting on every key.
+* An expanded 65% Vial Enabled keyboard with 2 rotary encoders, an OLED and RGB lighting on every key.
 
 * Keyboard Maintainer: [Timception](https://instagram.com/keykraft)
 * Hardware Supported: STM32F401
