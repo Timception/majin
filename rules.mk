@@ -25,7 +25,7 @@ OLED_ENABLE			= yes
 OLED_DRIVER			= SSD1306
 
 # OLED Animation Stuff
-SRC					+= oled/oled-bongocat.c oled/oled-icons.c
+SRC					+= oled-luna.c oled/oled-icons.c
 #SRC					+= oled/oled-luna.c oled/oled-icons.c
 WPM_ENABLE			= yes
 

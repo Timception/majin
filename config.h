@@ -41,7 +41,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VIAL_ENCODER_DEFAULT { RGB_RMOD, RGB_MOD, RGB_HUD, RGB_HUI, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS }
 
 // RGB Matrix Settings
-//#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_MATRIX_KEYPRESSES
 
 /* COL2ROW or ROW2COL */
